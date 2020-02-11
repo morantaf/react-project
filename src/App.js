@@ -1,27 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Events from "./components/Events"
+import Event from "./components/Event"
 import NavBar from "./components/NavBar"
-import Friends from "./components/Friends"
+import Friend from "./components/Friend"
 import Footer from './components/Footer';
+import MyFeed from './components/MyFeed';
+
+
 function App() {
   return (
     <div className="App">
       <NavBar />
       <div className="Row Flow">
         <div id="Event Section">
-          <Events title="Title " decription="Description"
-            source="https://learntocodetogether.nl/assets/team.svg" address="address" />
-          <Events title="Title " decription="Description"
-            source="https://learntocodetogether.nl/assets/team.svg" address="address" />
-          <Events title="Title " decription="Description"
-            source="https://learntocodetogether.nl/assets/team.svg" address="address" />
+          <MyFeed />
         </div>
 
         <div id="Sidebar">
           <h1>People you should know</h1>
-          <Friends name="Jean" source="https://learntocodetogether.nl/assets/team.svg" interest1="Music" interest2="Singing" interest3="Dancing" />
+          <Friend name="Jasmine" source="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/face-wash-2-1561136582.jpg?resize=480:*" interests={["Music", "Singing", "Dancing"]} />
         </div>
         <Footer />
       </div>
