@@ -1,4 +1,4 @@
-{
+[{
   "events": [
     {
       "id": 1,
@@ -102,3 +102,97 @@
     }
   ]
 }
+{
+  "friends": [
+    {
+      "id": 101,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "Discover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 102,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "Discover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 103,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "IDiscover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 104,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "IDiscover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 105,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "IDiscover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 106,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "IDiscover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 107,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "IDiscover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 108,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "IDiscover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 109,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "IDiscover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    },
+    {
+      "id": 110,
+      "img": "https://images.unsplash.com/profile-fb-1495323378-348388c4fd13.jpg?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128",
+      "name": "Aline Texeira",
+      "description": "IDiscover me here.",
+      "tag1": "Music",
+      "tag2": "Rock-climbing",
+      "tag3": "Calligraphy"
+    }
+  ]
+}]
