@@ -8,7 +8,7 @@ export default class MyFeed extends Component {
 
   }
   componentDidMount() {
-    fetch("https://my-json-server.typicode.com/morantaf/react-project/events")
+    fetch("https://my-json-server.typicode.com/morantaf/react-project/data")
       .then(response => response.json())
       .then(data =>
         this.setState({
@@ -19,9 +19,9 @@ export default class MyFeed extends Component {
   }
   render() {
     const { events, loading, error } = this.state
-    if (this.state.loading) {
+    if (loading) {
       return <p>"Loading"</p>;
-    } else if (this.state.error) {
+    } else if (error) {
       return <div>Something went wrong, refresh the page.</div>;
     } else {
       return (

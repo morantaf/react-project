@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.App-row {
+  display: flex;
+  flex-flow: row;
+}
+
+.App-events {
+  margin: 20px;
+}
+
+.App-sidebar {
+  margin: 20px;
+}

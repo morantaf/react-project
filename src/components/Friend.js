@@ -4,10 +4,12 @@ export default class Friend extends Component {
   render() {
     return (
       <div className="FriendSection">
-        <img src={this.props.source} />
         <p>{this.props.name}</p>
-        {this.props.interests.map(interest =>
-          <span>{interest} </span>)}
+        <img src={this.props.source} />
+        <span>{this.props.interest1}</span>
+        <span>{this.props.interest2}</span>
+        <span>{this.props.interest3}</span>
+
       </div>
     )
   }

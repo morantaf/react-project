@@ -6,21 +6,22 @@ import NavBar from "./components/NavBar"
 import Friend from "./components/Friend"
 import Footer from './components/Footer';
 import MyFeed from './components/MyFeed';
+import Sidebar from './components/Sidebar';
 
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="Row Flow">
-        <div id="Event Section">
+      <div className="App-row">
+        <div id="App-events">
           <MyFeed />
         </div>
 
-        <div id="Sidebar">
-          <h1>People you should know</h1>
-          <Friend name="Jasmine" source="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/face-wash-2-1561136582.jpg?resize=480:*" interests={["Music", "Singing", "Dancing"]} />
+        <div id="App-sidebar">
+          <Sidebar />
         </div>
+
         <Footer />
       </div>
     </div>
