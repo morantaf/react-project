@@ -18,7 +18,9 @@ export default class MyFeed extends Component {
         }))
   }
   render() {
+
     const { events, loading, error } = this.state
+    const events_copy = [...events]
     if (loading) {
       return <p>"Loading"</p>;
     } else if (error) {

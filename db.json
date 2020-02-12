@@ -8,7 +8,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Kruislaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": 15
+      "price in €": 15,
+      "attendees": 0
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "5 Honinglaan, Amsterdam 1026RW",
       "duration(hrs)": 2,
-      "price in €": 10
+      "price in €": 10,
+      "attendees": 0
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Spoorlaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": 12
+      "price in €": 14,
+      "attendees": 0
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Kruislaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": 10
+      "price in €": 10,
+      "attendees": 0
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Broodlaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": "FREE"
+      "price in €": "FREE",
+      "attendees": 0
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Dorplaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": 15
+      "price in €": 15,
+      "attendees": 0
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Bootlaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": 25
+      "price in €": 2,
+      "attendees": 0
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Hemellaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": 5
+      "price in €": 5,
+      "attendees": 0
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Grondlaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": 15
+      "price in €": 15,
+      "attendees": 0
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "img": "https://yourteenmag.com/wp-content/uploads/2018/06/youthdrinkingparty-1-1135x540.jpg",
       "address": "15 Laanlaan, Amsterdam 1035EJ",
       "duration(hrs)": 2,
-      "price in €": 10
+      "price in €": 10,
+      "attendees": 0
     }
   ],
   "friends": [
