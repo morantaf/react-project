@@ -1,39 +1,25 @@
 import React, { Component } from 'react'
+import "./Events.css"
 
 export default class Event extends Component {
   state = {
     value: true,
-    counter: 0
-  };
-  // ...
-  increment = () => {
-    this.setState({
-      value: false,
-      counter: this.state.counter + 1
-
-    });
-  };
-  decrement = () => {
-    this.setState({
-      value: true,
-      counter: this.state.counter - 1
-
-    });
   };
 
-  ada = () => {
+  handleClick = () => {
     if (this.state.value) {
-      return (<div>
-        <p>{this.state.counter}</p>
-        <button onClick={this.increment}>Join</button>
-      </div>)
-    }
-    else {
-      return (<div>
-        <p>{this.state.counter}</p>
-        <button onClick={this.decrement}>Leave</button>
-      </div>
-      );
+      this.props.incrementAttendees(this.props.id)
+      console.log("increment", this.state.value)
+      this.setState({
+        value: false
+      })
+    } else {
+      this.props.decrementAttendees(this.props.id)
+      console.log("decrement", this.state.value)
+      this.setState({
+        value: true
+
+      })
     }
   }
 
@@ -52,7 +38,8 @@ export default class Event extends Component {
           <div className="Ratings"></div>
           <button>More</button>
         </div>
-        {this.ada()}
+        <p>{this.props.attendees}</p>
+        <button onClick={this.handleClick}>Join</button>
 
       </div>
     )

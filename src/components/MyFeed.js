@@ -3,7 +3,7 @@ import Event from "./Event"
 export default class MyFeed extends Component {
   state = {
     loading: true,
-    events: null,
+    events: [],
     error: false
 
   }
@@ -17,24 +17,69 @@ export default class MyFeed extends Component {
 
         }))
   }
+  incrementAttendees = id => {
+
+    const updatedEvents = this.state.events.map(event => {
+      if (event.id === id) {
+        return { ...event, attendees: event.attendees + 1 }
+      } else { return event }
+    })
+    this.setState({
+      //value: false,
+      events: updatedEvents
+    })
+  };
+  decrementAttendees = id => {
+    const updatedEvents = this.state.events.map(event => {
+      if (event.id === id) {
+        return { ...event, attendees: event.attendees - 1 }
+      } else { return event }
+    })
+    this.setState({
+      //value: false,
+      events: updatedEvents
+    })
+  };
+  changeAttendeesNo = (id) => {
+    // if (this.state.value) {
+    //   return (<div>
+    //     <p>{this.state.counter}</p>
+    //     <button onClick={this.incrementAttendees}>Join</button>
+    //   </div>)
+    // }
+    // else {
+    //   return (<div>
+    //     <p>{this.state.counter}</p>
+    //     <button onClick={this.decrementAttendees}>Leave</button>
+    //   </div>
+    //   );
+    // }
+  }
+  renderEvent = (event) => {
+    return (
+      < Event title={event.title}
+        decription={event.decription}
+        source={event.img}
+        address={event.address}
+        attendees={event.attendees}
+        id={event.id}
+        incrementAttendees={this.incrementAttendees}
+        decrementAttendees={this.decrementAttendees} />
+    )
+  }
+
   render() {
 
-    const { events, loading, error } = this.state
-    const events_copy = [...events]
-    if (loading) {
+    const events_copy = [...this.state.events]
+    events_copy.sort((a, b) => b.attendees - a.attendees)
+    if (this.state.loading) {
       return <p>"Loading"</p>;
-    } else if (error) {
+    } else if (this.state.error) {
       return <div>Something went wrong, refresh the page.</div>;
     } else {
       return (
         <div>
-          {events.map(event => {
-            return (
-
-              <Event title={event.title} decription={event.decription}
-                source={event.img} address={event.address} />
-            );
-          })}
+          {events_copy.map(this.renderEvent)})}
         </div>
       );
     }

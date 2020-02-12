@@ -1,0 +1,7 @@
+.Picture {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}

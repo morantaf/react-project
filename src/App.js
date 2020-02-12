@@ -7,23 +7,26 @@ import Friend from "./components/Friend"
 import Footer from './components/Footer';
 import MyFeed from './components/MyFeed';
 import Sidebar from './components/Sidebar';
-
+import "./components/Events.css"
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <div className="App-row">
-        <div id="App-events">
+        <div className="App-events">
           <MyFeed />
         </div>
 
-        <div id="App-sidebar">
+        <div className="App-sidebar">
           <Sidebar />
+
         </div>
 
-        <Footer />
+
+
       </div>
+      <Footer />
     </div>
   );
 }
