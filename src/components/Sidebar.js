@@ -32,7 +32,7 @@ export default class Sidebar extends Component {
           {friends.map(friend => {
             return (
 
-              <Friend name={friend.name} source={friend.img} interest1={friend.tag1} interest2={friend.tag2} interest2={friend.tag2} />
+              <Friend name={friend.name} source={friend.img} interests={friend.interests} />
             );
           })}
         </div>

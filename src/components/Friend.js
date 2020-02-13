@@ -6,9 +6,8 @@ export default class Friend extends Component {
       <div className="FriendSection">
         <p>{this.props.name}</p>
         <img src={this.props.source} />
-        <span>{this.props.interest1}</span>
-        <span>{this.props.interest2}</span>
-        <span>{this.props.interest3}</span>
+        {this.props.interests.map(interest =>
+          <span>{interest}</span>)}
 
       </div>
     )
