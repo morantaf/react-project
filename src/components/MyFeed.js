@@ -17,11 +17,11 @@ export default class MyFeed extends Component {
 
         }))
   }
-  incrementAttendees = id => {
+  modifyAttendees = (id, increment) => {
 
     const updatedEvents = this.state.events.map(event => {
       if (event.id === id) {
-        return { ...event, attendees: event.attendees + 1 }
+        return increment ? { ...event, attendees: event.attendees + 1 } : { ...event, attendees: event.attendees - 1 }
       } else { return event }
     })
     this.setState({
@@ -41,7 +41,7 @@ export default class MyFeed extends Component {
     })
   };
   changeAttendeesNo = (id) => {
-    // if (this.state.value) {
+    // if (this.state.value) { 
     //   return (<div>
     //     <p>{this.state.counter}</p>
     //     <button onClick={this.incrementAttendees}>Join</button>
@@ -63,7 +63,7 @@ export default class MyFeed extends Component {
         address={event.address}
         attendees={event.attendees}
         id={event.id}
-        incrementAttendees={this.incrementAttendees}
+        modifyAttendees={this.modifyAttendees}
         decrementAttendees={this.decrementAttendees} />
     )
   }
@@ -79,7 +79,7 @@ export default class MyFeed extends Component {
     } else {
       return (
         <div>
-          {events_copy.map(this.renderEvent)})}
+          {events_copy.map(this.renderEvent)}
         </div>
       );
     }

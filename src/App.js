@@ -1,20 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Event from "./components/Event"
 import NavBar from "./components/NavBar"
-import Friend from "./components/Friend"
 import Footer from './components/Footer';
 import MyFeed from './components/MyFeed';
 import Sidebar from './components/Sidebar';
-import "./components/Events.css"
+import "./components/Event.css"
+import { Route } from "react-router-dom"
+import MainPage from './MainPage'
+import EventPage from './components/EventPage'
+
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="App-row">
-        <div className="App-events">
+
+
+      <Route exact path="/" component={MainPage} />
+
+      <Route exact path="/events" component={MyFeed} />
+      <Route path="/events/:eventId" component={EventPage} />
+      <Route exact path="/friends" component={Sidebar} />
+
+      {/* <div className="App-events">
+
           <MyFeed />
         </div>
 
@@ -27,6 +36,7 @@ function App() {
 
       </div>
       <Footer />
+    </div> */}
     </div>
   );
 }

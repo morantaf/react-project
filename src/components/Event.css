@@ -1,0 +1,44 @@
+.picture {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.event {
+  border: solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.joinButton {
+  background-color: #4CAF50; 
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+/* .joinButton {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: #4CAF50;
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+ } */
+
+ .joinButton:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgb(252, 252, 252); 
+ }

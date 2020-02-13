@@ -1,10 +1,29 @@
+.friendSection{
+  border: solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .friend-image {
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
 }
 .interests{
   justify-content: space-evenly;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.friendButton{
+  height: 50px;
+  width: auto;
+  border: solid;
+  border-radius: 50%;
 }
