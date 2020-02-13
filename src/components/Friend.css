@@ -1,0 +1,10 @@
+.friend-image {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+.interests{
+  justify-content: space-evenly;
+}
