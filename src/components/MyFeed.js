@@ -29,32 +29,7 @@ export default class MyFeed extends Component {
       events: updatedEvents
     })
   };
-  decrementAttendees = id => {
-    const updatedEvents = this.state.events.map(event => {
-      if (event.id === id) {
-        return { ...event, attendees: event.attendees - 1 }
-      } else { return event }
-    })
-    this.setState({
-      //value: false,
-      events: updatedEvents
-    })
-  };
-  changeAttendeesNo = (id) => {
-    // if (this.state.value) { 
-    //   return (<div>
-    //     <p>{this.state.counter}</p>
-    //     <button onClick={this.incrementAttendees}>Join</button>
-    //   </div>)
-    // }
-    // else {
-    //   return (<div>
-    //     <p>{this.state.counter}</p>
-    //     <button onClick={this.decrementAttendees}>Leave</button>
-    //   </div>
-    //   );
-    // }
-  }
+
   renderEvent = (event) => {
     return (
       < Event title={event.title}
@@ -63,8 +38,7 @@ export default class MyFeed extends Component {
         address={event.address}
         attendees={event.attendees}
         id={event.id}
-        modifyAttendees={this.modifyAttendees}
-        decrementAttendees={this.decrementAttendees} />
+        modifyAttendees={this.modifyAttendees} />
     )
   }
 

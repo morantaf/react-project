@@ -21,7 +21,6 @@ export default class MainPage extends Component {
 
 
         </div>
-        <Footer />
       </div>
     )
   }

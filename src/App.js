@@ -22,21 +22,7 @@ function App() {
       <Route path="/events/:eventId" component={EventPage} />
       <Route exact path="/friends" component={Sidebar} />
 
-      {/* <div className="App-events">
-
-          <MyFeed />
-        </div>
-
-        <div className="App-sidebar">
-          <Sidebar />
-
-        </div>
-
-
-
-      </div>
       <Footer />
-    </div> */}
     </div>
   );
 }
