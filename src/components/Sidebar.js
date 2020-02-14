@@ -4,22 +4,22 @@ import Friend from "./Friend"
 export default class Sidebar extends Component {
   state = {
     loading: true,
-    friends: null,
+    people: null,
     error: false
 
   }
   componentDidMount() {
-    fetch("https://my-json-server.typicode.com/morantaf/react-project/friends")
+    fetch("https://my-json-server.typicode.com/morantaf/react-project/people")
       .then(response => response.json())
       .then(data =>
         this.setState({
           loading: false,
-          friends: data
+          people: data
 
         }))
   }
   render() {
-    const { friends, loading, error } = this.state
+    const { people, loading, error } = this.state
     if (loading) {
       return <p>"Loading"</p>;
     } else if (error) {
@@ -29,10 +29,10 @@ export default class Sidebar extends Component {
 
         <div>
           <h1>People you should Know</h1>
-          {friends.map(friend => {
+          {people.map(person => {
             return (
 
-              <Friend name={friend.name} source={friend.img} interests={friend.interests} />
+              <Friend name={person.name} source={person.img} interests={person.interests} />
             );
           })}
         </div>

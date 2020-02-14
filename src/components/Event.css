@@ -1,10 +1,16 @@
 .picture {
   display: flex;
   flex-direction: column;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.picture-box {
+  max-height: 50vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .event {

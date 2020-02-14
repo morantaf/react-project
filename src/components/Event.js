@@ -31,8 +31,8 @@ export default class Event extends Component {
           <h2>{this.props.title}</h2>
           <p>{this.props.description}</p>
         </div>
-        <div className="picture">
-          <img src={this.props.source} />
+        <div className="picture-box">
+          <img className="picture" src={this.props.source} />
         </div>
         <div className="eventFooter">
           <h4>{this.props.address}</h4>
