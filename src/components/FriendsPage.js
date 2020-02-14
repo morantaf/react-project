@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Friend from './Friend'
 
 export default class FriendsPage extends Component {
 
@@ -22,6 +23,9 @@ export default class FriendsPage extends Component {
     return (
       <div>
         <h1>My friends</h1>
+        {this.state.friends.map(friend => {
+          <Friend name={person.name} source={person.img} interests={person.interests} />
+        })}
 
       </div>
     )
