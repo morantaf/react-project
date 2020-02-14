@@ -20,7 +20,7 @@
   margin-bottom: 10px;
 }
 
-.joinButton {
+#joinButton {
   background-color: #4CAF50; 
   border: none;
   border-radius: 10px;
@@ -44,7 +44,23 @@
   transition: all 0.2s ease-in-out;
  } */
 
- .joinButton:hover {
+ #joinButton:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px rgb(252, 252, 252); 
+ }
+
+ .eventFooters {
+   text-align: justify
+   
+ }
+ .eventFooter1 {
+  display: flex;
+  flex-flow:column;
+   
+ }
+
+ .eventFooter2 {
+   display: flex;
+   flex-flow:column;
+   align-items:flex-end
  }

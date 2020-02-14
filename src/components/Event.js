@@ -34,12 +34,19 @@ export default class Event extends Component {
         <div className="picture-box">
           <img className="picture" src={this.props.source} />
         </div>
-        <div className="eventFooter">
-          <h4>{this.props.address}</h4>
-          <div className="ratings"></div>
-          <Link to={`/events/${this.props.id}`} >More</Link>
-          <p> <b>Participants</b> :{this.props.attendees}</p>
-          <button className="joinButton" onClick={this.handleClick}>Join</button>
+        <div className="eventFooters">
+          <div className="eventFooter1">
+            <h4>{this.props.address}</h4>
+            {/* <div className="ratings"></div> */}
+            <Link to={`/events/${this.props.id}`} >More</Link>
+          </div>
+          <div className="eventFooter2">
+            <p className="participant"> <b>Participants</b> :{this.props.attendees}</p>
+
+            <button className="participant" id="joinButton" onClick={this.handleClick}>Join</button>
+
+          </div>
+
         </div>
 
 
