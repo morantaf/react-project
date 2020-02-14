@@ -24,7 +24,11 @@ export default class FriendsPage extends Component {
       <div>
         <h1>My friends</h1>
         {this.state.friends.map(friend => {
-          <Friend name={person.name} source={person.img} interests={person.interests} />
+          return (
+            <div>
+              <Friend name={friend.name} source={friend.img} interests={friend.interests} />
+            </div>
+          )
         })}
 
       </div>
