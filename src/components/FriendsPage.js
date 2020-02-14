@@ -4,7 +4,7 @@ import Friend from './Friend'
 export default class FriendsPage extends Component {
 
   state = {
-    friends: {}
+    friends: []
   }
   componentDidMount() {
     fetch("https://my-json-server.typicode.com/morantaf/react-project/friends")
@@ -26,7 +26,7 @@ export default class FriendsPage extends Component {
         {this.state.friends.map(friend => {
           return (
             <div>
-              <Friend name={friend.name} source={friend.img} interests={friend.interests} />
+              <Friend img={friend.img} name={friend.name} />
             </div>
           )
         })}

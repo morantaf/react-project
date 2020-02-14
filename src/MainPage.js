@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 import Footer from './components/Footer';
 import MyFeed from './components/MyFeed';
 import Sidebar from './components/Sidebar';
+import SignupForm from './components/SignupForm';
+
+
 export default class MainPage extends Component {
   render() {
     return (

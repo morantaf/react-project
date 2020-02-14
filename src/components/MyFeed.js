@@ -38,6 +38,7 @@ export default class MyFeed extends Component {
         address={event.address}
         attendees={event.attendees}
         id={event.id}
+        key={event.id}
         modifyAttendees={this.modifyAttendees} />
     )
   }

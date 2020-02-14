@@ -1,32 +1,20 @@
 import React, { Component } from 'react'
 import "./Friend.css"
-
 export default class Friend extends Component {
-  state = {
-    added: false
-  }
-
-  toggleFriend = () => {
-    this.setState({
-      added: !this.state.added
-    })
-  }
 
 
 
   render() {
-    const imgUrl = this.state.added ? "https://static.thenounproject.com/png/160062-200.png" : "https://static.thenounproject.com/png/446527-200.png"
     return (
-      <div className="friendSection">
-        <h1>{this.props.name}</h1>
-        <img className="friend-image" src={this.props.source} />
-        <div className="interestSection">
-          <h3>Common interests</h3>
-          {this.props.interests.map(interest =>
-            <span className="interests">{interest}  </span>)}
+      <div className="square">
+        <div className="content">
+          <div className="table">
+            <div className="table-cell">
+              <img className="rs" src={this.props.img} />
+              <h4 className="name">{this.props.name}</h4>
+            </div>
+          </div>
         </div>
-        <img className="friendButton" onClick={this.toggleFriend} src={imgUrl}></img>
-
       </div>
     )
   }

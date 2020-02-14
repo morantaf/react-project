@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import Friend from "./Friend"
+import People from "./People"
+import Filter from './Filter'
 
 export default class Sidebar extends Component {
   state = {
     loading: true,
-    people: null,
-    error: false
+    people: [],
+    filteredPeople: [],
+    filtered: false,
+    error: false,
 
   }
   componentDidMount() {
@@ -18,21 +21,60 @@ export default class Sidebar extends Component {
 
         }))
   }
+
+  filterPeople = (option) => {
+    const peopleInterests = this.state.people.map(person => [person.id, person.interests])
+
+    const filteredPeople = peopleInterests.filter(filteredPerson => filteredPerson[1].includes(option))
+
+    const updatedPeople = this.state.people.filter(person => filteredPeople.map(filteredPerson => filteredPerson[0]).includes(person.id))
+
+    if (option !== "") {
+      this.setState({
+        filteredPeople: updatedPeople,
+        filtered: true
+
+      })
+    }
+    else {
+      this.setState({
+        filtered: false
+      })
+    }
+  }
+
+
+
   render() {
-    const { people, loading, error } = this.state
-    if (loading) {
-      return <p>"Loading"</p>;
-    } else if (error) {
-      return <div>Something went wrong, refresh the page.</div>;
+    const { people, filteredPeople, filtered } = this.state
+    console.log("I render")
+    if (filtered) {
+
+      return (<div>
+        <h1>I filter</h1>
+        <h1>People you should Know</h1>
+        <Filter filterPeople={this.filterPeople} filtered={this.state.filtered} />
+
+        {filteredPeople.map(person => {
+          return (
+
+            <People name={person.name} source={person.img} interests={person.interests} key={person.id} />
+          );
+        })}
+      </div>)
+
     } else {
       return (
 
         <div>
+          <h1>I don't filter</h1>
           <h1>People you should Know</h1>
+          <Filter filterPeople={this.filterPeople} filtered={this.state.filtered} />
+
           {people.map(person => {
             return (
 
-              <Friend name={person.name} source={person.img} interests={person.interests} />
+              <People name={person.name} source={person.img} interests={person.interests} key={person.id} />
             );
           })}
         </div>
@@ -40,3 +82,4 @@ export default class Sidebar extends Component {
     }
   }
 }
+

@@ -3,11 +3,12 @@ import './App.css';
 import NavBar from "./components/NavBar"
 import Footer from './components/Footer';
 import MyFeed from './components/MyFeed';
-import Sidebar from './components/Sidebar';
 import "./components/Event.css"
 import { Route } from "react-router-dom"
 import MainPage from './MainPage'
 import EventPage from './components/EventPage'
+import FriendsPage from './components/FriendsPage';
+import SignupForm from './components/SignupForm';
 
 
 function App() {
@@ -20,10 +21,12 @@ function App() {
 
       <Route exact path="/events" component={MyFeed} />
       <Route path="/events/:eventId" component={EventPage} />
-      <Route exact path="/friends" component={Sidebar} />
+      <Route exact path="/friends" component={FriendsPage} />
 
-      <Footer />
-    </div>
+      <div className="footer">
+        <Footer />
+      </div>
+    </div >
   );
 }
 

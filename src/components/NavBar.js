@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./NavBar.css"
+import SignupForm from './SignupForm';
 
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,8 @@ export default class NavBar extends Component {
         <div id="Search bar">
           <input type="text" placeholder="search"></input>
         </div>
-        <a id="Profile" href="./eee.html">Profile</a>
+        <SignupForm />
+
       </div>
     )
   }
